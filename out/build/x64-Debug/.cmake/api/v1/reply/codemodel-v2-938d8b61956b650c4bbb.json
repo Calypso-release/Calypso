@@ -1,0 +1,68 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.9"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "bench",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "CardinalityMeasurement::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CardinalityMeasurement-Debug-62bf6fef5ac577f827f4.json",
+					"name" : "CardinalityMeasurement",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SuperSpreaderDetection::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SuperSpreaderDetection-Debug-8d2d0c1efa8faa62aeec.json",
+					"name" : "SuperSpreaderDetection",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "E:/dxw/教学课件/研究生/杨仝老师/学长论文或项目/王砚舒/code/submit/Calypso/out/build/x64-Debug",
+		"source" : "E:/dxw/教学课件/研究生/杨仝老师/学长论文或项目/王砚舒/code/submit/Calypso"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 2
+	}
+}
