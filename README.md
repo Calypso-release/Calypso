@@ -4,8 +4,23 @@ Detection via Skew-aware Flow Classification".
 
 ## Introduction
 
-Finding top-k items in data streams is a fundamental problem in data mining. Unbiased estimation is well acknowledged as an elegant and important property for top-k algorithms. In this paper, we propose a novel sketch algorithm, called WavingSketch, which is more accurate than existing unbiased algorithms. We theoretically prove that WavingSketch can provide unbiased estimation, and derive its error bound. WavingSketch is generic to measurement tasks, and we apply it to five applications: finding top-k frequent items, finding top-k heavy changes, finding top-k persistent items, finding top-k Super-Spreaders, and join-aggregate estimation. Our experimental results show that, compared with the state-of-the-art Unbiased Space-Saving, WavingSketch achieves 9.3¡Á faster speed and 10<sup>3</sup>¡Á smaller error on finding frequent items. For other applications, WavingSketch also achieves higher accuracy and faster speed.
-
+Detecting super spreaders is crucial in network management, security monitoring, and epidemiology. Super spreaders
+in computer networks, such as devices or IP addresses that gener-
+ate high traffic volumes, can cause congestion and security issues.
+Traditional flow size and cardinality measurement methods face
+challenges due to the need to handle duplicate elements and
+overlapping data. Existing techniques, such as Linear Counting
+(LC), Multi-Resolution-Bitmap (MRB), and HyperLogLog++
+(HLL), are efficient for single flows but inefficient for super
+spreader detection across multiple flows. Calypso addresses these
+challenges using dedicated HLL structures for large flows and
+a shared LC structure for small flows, leveraging the Pareto
+distribution to optimize storage space. This design allows for
+efficient deduplication and intersection calculation between dif-
+ferent data structures. Experimental results demonstrate that in
+all scenarios, Calypso¡¯s F1 score is optimal. Calypso achieves an
+F1 score up to 4.2 times higher than the best-compared algorithm
+while maintaining comparable throughput.
 
 ## About this repo
 
@@ -44,7 +59,7 @@ $ ./[program] [fileType] [filePath]
 2. `[fileType]`: An integer, representing the type of dataset:
 - 0: IP Trace Dataset (CAIDA)
 - 1: synthetic dataset
-- 2: Other real-world datasets, such as those from Amazon, DBLP, and similar sources, are also included.
+- 2: Other real-world datasets, such as Amazon, DBLP, and similar datasets, are also included.
 3. `[filePath]`: The path of the dataset you want to run. 
 
 
