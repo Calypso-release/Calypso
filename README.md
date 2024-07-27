@@ -18,7 +18,7 @@ a shared LC structure for small flows, leveraging the Pareto
 distribution to optimize storage space. This design allows for
 efficient deduplication and intersection calculation between dif-
 ferent data structures. Experimental results demonstrate that in
-all scenarios, Calypso¡¯s F1 score is optimal. Calypso achieves an
+all scenarios, Calypso's F1 score is optimal. Calypso achieves an
 F1 score up to 4.2 times higher than the best-compared algorithm
 while maintaining comparable throughput.
 
